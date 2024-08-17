@@ -1,0 +1,162 @@
+/* src/css/UserManagement.css */
+
+.datatable {
+  height: 600px;
+  padding: 20px;
+  background: #cfe2ff; /* Light blue gradient background */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.datatableTitle {
+  width: 100%;
+  font-size: 24px;
+  color: #306cbf;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.datatableTitle .link {
+  text-decoration: none;
+  color: #306cbf;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #00429e;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.refreshButton {
+  background-color: #306cbf;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.refreshButton:hover {
+  background-color: #00429e;
+}
+
+.cellWithImg {
+  display: flex;
+  align-items: center;
+}
+
+.cellWithImg .cellImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.cellWithStatus {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cellWithStatus.active {
+  background-color: rgba(0, 128, 0, 0.05);
+  color: green;
+}
+
+.cellWithStatus.pending {
+  background-color: rgba(255, 217, 0, 0.05);
+  color: goldenrod;
+}
+
+.cellWithStatus.passive {
+  background-color: rgba(255, 0, 0, 0.05);
+  color: crimson;
+}
+
+.cellAction {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cellAction .viewButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: darkblue;
+  border: 1px dotted rgba(0, 0, 139, 0.596);
+  cursor: pointer;
+}
+
+.cellAction .deleteButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: crimson;
+  border: 1px dotted rgba(220, 20, 60, 0.6);
+  cursor: pointer;
+}
+
+.datagrid {
+  background: #ffffff; /* White background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slight shadow */
+  position: relative;
+  overflow: hidden;
+}
+
+.datagrid .MuiDataGrid-columnHeaders {
+  background: #306cbf; /* Dark green header */
+  color: #fff;
+  font-weight: bold;
+}
+
+.datagrid .MuiDataGrid-row:nth-child(even) {
+  background: #f0f0f0; /* Light grey for even rows */
+}
+
+.datagrid .MuiDataGrid-cell {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.datagrid .MuiDataGrid-columnSeparator {
+  display: none;
+}
+
+.datagrid .MuiDataGrid-footerContainer {
+  display: none;
+}
+
+.datagrid .MuiCheckbox-root {
+  color: #00429e !important;
+}
+
+.datagrid .MuiDataGrid-cell:focus {
+  outline: none;
+}
+
+.datagrid .MuiDataGrid-cell--withRenderer img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  transition: transform 0.3s ease;
+}
+
+.datagrid .MuiDataGrid-cell--withRenderer img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.css-rbjqkq-MuiDataGrid-root .MuiDataGrid-row--borderBottom .MuiDataGrid-columnHeader, .css-rbjqkq-MuiDataGrid-root .MuiDataGrid-row--borderBottom .MuiDataGrid-filler, .css-rbjqkq-MuiDataGrid-root .MuiDataGrid-row--borderBottom .MuiDataGrid-scrollbarFiller  {
+  background-color: #306cbf;
+}

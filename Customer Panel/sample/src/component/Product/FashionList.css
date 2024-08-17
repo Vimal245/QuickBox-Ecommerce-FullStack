@@ -1,0 +1,110 @@
+.products-section {
+    background-color: #F5F5F5;
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-photo img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 16px;
+    flex-grow: 1;
+}
+
+.product-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.quantity-section {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.quantity-section input {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.add-to-cart-button {
+    background-color: #6482AD;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #1254b3;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.load-more-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.load-more-button {
+    background-color: #6482AD;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.load-more-button:hover {
+    background-color: #1254b3;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+

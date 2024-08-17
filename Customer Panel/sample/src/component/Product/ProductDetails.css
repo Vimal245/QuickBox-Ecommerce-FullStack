@@ -1,0 +1,9 @@
+.store-list-item {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .store-list-item:hover {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  
